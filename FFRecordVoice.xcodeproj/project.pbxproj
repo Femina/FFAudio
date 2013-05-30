@@ -19,6 +19,7 @@
 		618EB5B31757853500EC52D3 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 618EB5B11757853500EC52D3 /* MainStoryboard_iPhone.storyboard */; };
 		618EB5B61757853500EC52D3 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 618EB5B41757853500EC52D3 /* MainStoryboard_iPad.storyboard */; };
 		618EB5B91757853500EC52D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618EB5B81757853500EC52D3 /* ViewController.m */; };
+		618EB5C01757855200EC52D3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618EB5BF1757855200EC52D3 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		618EB5B51757853500EC52D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		618EB5B71757853500EC52D3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		618EB5B81757853500EC52D3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		618EB5BF1757855200EC52D3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				618EB5C01757855200EC52D3 /* AVFoundation.framework in Frameworks */,
 				618EB59A1757853500EC52D3 /* UIKit.framework in Frameworks */,
 				618EB59C1757853500EC52D3 /* Foundation.framework in Frameworks */,
 				618EB59E1757853500EC52D3 /* CoreGraphics.framework in Frameworks */,
@@ -58,6 +61,7 @@
 		618EB58D1757853400EC52D3 = {
 			isa = PBXGroup;
 			children = (
+				618EB5BF1757855200EC52D3 /* AVFoundation.framework */,
 				618EB59F1757853500EC52D3 /* FFRecordVoice */,
 				618EB5981757853500EC52D3 /* Frameworks */,
 				618EB5971757853500EC52D3 /* Products */,

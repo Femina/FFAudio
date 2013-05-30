@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<AVAudioRecorderDelegate,AVAudioPlayerDelegate>
+
+@property(nonatomic,retain) IBOutlet UIButton *playButton;
+@property(nonatomic,retain) IBOutlet UIButton *recordButton;
+@property(nonatomic,retain) IBOutlet UIButton *stopButton;
+
+
+- (IBAction)recordPauseTapped:(id)sender;
+- (IBAction)stopTapped:(id)sender;
+- (IBAction)playTapped:(id)sender;
 
 @end
