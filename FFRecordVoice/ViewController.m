@@ -38,7 +38,7 @@
     AVAudioSession *avSession = [AVAudioSession sharedInstance];
     [avSession setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
     
-    // Define the recorder setting
+    // It define the recorder setting
     NSMutableDictionary *recordSetting = [[NSMutableDictionary alloc] init];
     
     [recordSetting setValue:[NSNumber numberWithInt:kAudioFormatMPEG4AAC] forKey:AVFormatIDKey];
@@ -60,6 +60,8 @@
 }
 - (IBAction)recordPauseTapped:(id)sender
 {
+    // This is to support record / pause
+    
     if(player.playing)
     {
         [player stop];
@@ -83,7 +85,8 @@
     [playButton setEnabled:NO];
 }
 
-- (IBAction)stopTapped:(id)sender {
+- (IBAction)stopTapped:(id)sender
+{
     [recorder stop];
     
     AVAudioSession *audioSession = [AVAudioSession sharedInstance];
@@ -114,8 +117,8 @@
 
 - (void) audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
 {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Done"
-                                                    message: @"Finish playing the recording!"
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Wow!"
+                                                    message: @"Hey!Im done with playing the recorded audio clip :)!"
                                                    delegate: nil
                                           cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];
